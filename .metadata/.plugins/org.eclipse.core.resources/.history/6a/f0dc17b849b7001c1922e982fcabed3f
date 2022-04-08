@@ -1,0 +1,35 @@
+package com.zinkwork.atm;
+
+import static org.mockito.Mockito.when;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.zinkwork.atm.service.AtmService;
+import com.zinkwork.atm.service.AtmServiceImpl;
+import com.zinkwork.atm.utils.CommonUtils;
+import com.zinkwork.atm.validatiion.AtmValidation;
+
+@SpringBootTest
+class AtmApplicationTests {
+	
+	@Mock
+	private AtmValidation atmValidation;
+	
+	@Mock
+	private CommonUtils commonUtils;
+	
+	@Mock
+	private AtmService atmService;
+	
+	
+	@Test
+	public void withDrawAmountTest() {
+		
+		when(atmValidation.atmBalanceCheck(any, atmId))
+	}
+	
+}

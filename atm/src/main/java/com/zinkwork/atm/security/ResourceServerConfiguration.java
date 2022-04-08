@@ -16,8 +16,8 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 		http.cors().and()
 			.csrf().disable().
 			authorizeRequests()
-			.antMatchers(HttpMethod.GET, "api/v1/checkBalance/**").hasRole("USER")
-			.antMatchers(HttpMethod.GET, "api/v1/withdraw/**").hasRole("USER")
+			//.antMatchers(HttpMethod.GET, "api/v1/checkBalance/**").hasRole("USER")
+			.antMatchers(HttpMethod.GET, "api/v1/withdraw/**").permitAll()
 			.antMatchers("/h2-console/**").permitAll()
 			.anyRequest().authenticated();
 		http.headers().frameOptions().disable();

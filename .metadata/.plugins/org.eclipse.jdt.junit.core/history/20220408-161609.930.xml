@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AtmApplicationTests" project="atm" tests="2" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.zinkwork.atm.AtmApplicationTests" incomplete="true" displayname="AtmApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.zinkwork.atm.AtmApplicationTests]">
+    <testcase name="withdrawAmountThenNoAtmBalanceTest" classname="com.zinkwork.atm.AtmApplicationTests" incomplete="true" displayname="withdrawAmountThenNoAtmBalanceTest()" uniqueid="[engine:junit-jupiter]/[class:com.zinkwork.atm.AtmApplicationTests]/[method:withdrawAmountThenNoAtmBalanceTest()]"/>
+    <testcase name="withdrawAmountThenNoUserBalanceTest" classname="com.zinkwork.atm.AtmApplicationTests" incomplete="true" displayname="withdrawAmountThenNoUserBalanceTest()" uniqueid="[engine:junit-jupiter]/[class:com.zinkwork.atm.AtmApplicationTests]/[method:withdrawAmountThenNoUserBalanceTest()]"/>
+  </testsuite>
+</testrun>

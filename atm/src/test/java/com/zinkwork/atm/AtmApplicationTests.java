@@ -1,15 +1,69 @@
 package com.zinkwork.atm;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import static org.mockito.Mockito.when;
 
-@SpringBootTest
-class AtmApplicationTests {
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+import org.junit.runner.RunWith;
+import org.mockito.ArgumentMatchers;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
 
-	@Test
-	public void withDrawAmountTest() {
-		
+import com.zinkwork.atm.exception.InSufficientBalanceException;
+import com.zinkwork.atm.exception.NoAtmBalanceException;
+import com.zinkwork.atm.service.AtmService;
+import com.zinkwork.atm.service.AtmServiceImpl;
+import com.zinkwork.atm.utils.CommonUtils;
+import com.zinkwork.atm.validatiion.AtmValidation;
+
+@RunWith(MockitoJUnitRunner.class)
+public class AtmApplicationTests {
+	
+	@Rule
+	public ExpectedException exceptionRule =ExpectedException.none();
+	
+	@Mock
+	private AtmValidation atmValidation;
+	
+	@Mock
+	private CommonUtils commonUtils;
+	
+	@InjectMocks
+	private AtmServiceImpl atmService;
+	
+	@Before
+	public void setUp() {
+		MockitoAnnotations.initMocks(this);
 	}
-
+	
+	@Test
+	public void withdrawAmountThenNoAtmBalanceTest() {
+		exceptionRule.expectMessage("No sufficinet Balance in ATM");
+		exceptionRule.expect(NoAtmBalanceException.class);
+		when(atmValidation.atmBalanceCheck(ArgumentMatchers.anyLong(),ArgumentMatchers.anyInt())).thenReturn(false);
+		atmService.withdrawAmount(220L,3,340L);
+	}
+	
+	@Test
+	public void withdrawAmountThenNoUserBalanceTest() {
+		exceptionRule.expectMessage("No sufficient balance in account");
+		exceptionRule.expect(InSufficientBalanceException.class);
+		when(atmValidation.atmBalanceCheck(ArgumentMatchers.anyLong(),ArgumentMatchers.anyInt())).thenReturn(true);
+		when(atmValidation.userBalanceCheck(ArgumentMatchers.anyLong(), ArgumentMatchers.anyLong())).thenReturn(false);
+		atmService.withdrawAmount(220L, 3, 340L);
+	}
+	
+	@Test
+	public void checkBalanceThenNoUserBalanceTest() {
+		exceptionRule.expectMessage("No sufficient balance in account");
+		exceptionRule.expect(InSufficientBalanceException.class);
+		when(atmValidation.atmBalanceCheck(ArgumentMatchers.anyLong(),ArgumentMatchers.anyInt())).thenReturn(true);
+		when(atmValidation.userBalanceCheck(ArgumentMatchers.anyLong(), ArgumentMatchers.anyLong())).thenReturn(false);
+		atmService.withdrawAmount(220L, 3, 340L);
+	}
 	
 }

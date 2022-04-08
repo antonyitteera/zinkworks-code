@@ -1,0 +1,43 @@
+package com.zinkwork.atm;
+
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.jupiter.api.Test;
+import org.junit.rules.ExpectedException;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
+
+import com.zinkwork.atm.service.AtmService;
+import com.zinkwork.atm.utils.CommonUtils;
+import com.zinkwork.atm.validatiion.AtmValidation;
+
+@RunWith(MockitoJUnitRunner.class)
+class AtmApplicationTests {
+	
+	@Rule
+	public ExpectedException exceptionRule =ExpectedException.none();
+	
+	@Mock
+	private AtmValidation atmValidation;
+	
+	@Mock
+	private CommonUtils commonUtils;
+	
+	@InjectMocks
+	private AtmService atmService;
+	
+	@Before
+	public void setUp() {
+		MockitoAnnotations.initMocks(this);
+	}
+	
+	@Test
+	public void withDrawAmountTest() {
+		
+		//when(atmValidation.atmBalanceCheck(any, atmId))
+	}
+	
+}

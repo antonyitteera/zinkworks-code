@@ -1,0 +1,22 @@
+package com.zinkwork.atm;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.zinkwork.atm.service.AtmService;
+import com.zinkwork.atm.service.AtmServiceImpl;
+
+@SpringBootTest
+class AtmApplicationTests {
+
+	@Mock
+	private AtmService atmService;
+	
+	@Test
+	public void withDrawAmountTest() {
+		
+	}
+	
+}

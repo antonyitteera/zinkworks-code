@@ -13,9 +13,12 @@ import org.hibernate.annotations.GenericGenerator;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -26,7 +29,7 @@ public class NoteEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
 	@GenericGenerator(name = "native",strategy = "native")
 	private Integer id;
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne
 	@JoinColumn(name = "atmEntity_id",nullable = false)
 	private AtmEntity atmEntity;
 	private Integer note;
@@ -36,4 +39,5 @@ public class NoteEntity {
 		this.note=note;
 		this.count=count;
 	}
+	
 }

@@ -21,4 +21,10 @@ public class AtmException {
 		RespDAO respObj= new RespDAO(exception.getMessage());
 		return new ResponseEntity<Object>(respObj, HttpStatus.BAD_REQUEST);
 	}
+	
+	@ExceptionHandler(value= NoNotesAvailableException.class)
+	public ResponseEntity<Object> exception(NoNotesAvailableException exception){
+		RespDAO respObj= new RespDAO(exception.getMessage());
+		return new ResponseEntity<Object>(respObj, HttpStatus.BAD_REQUEST);
+	}
 }

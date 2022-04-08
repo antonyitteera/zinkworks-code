@@ -15,9 +15,12 @@ import org.hibernate.annotations.GenericGenerator;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -29,7 +32,7 @@ public class AtmEntity {
 	@GenericGenerator(name = "native",strategy = "native")
 	private Integer id;
 	private Double balance;
-	@OneToMany(mappedBy = "atmEntity",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "atmEntity",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	private Set<NoteEntity> noteEntity;
 	
 }

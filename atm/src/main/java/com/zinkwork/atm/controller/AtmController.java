@@ -1,5 +1,6 @@
 package com.zinkwork.atm.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.zinkwork.atm.DAO.DispenseDAO;
 import com.zinkwork.atm.DAO.RespDAO;
 import com.zinkwork.atm.entity.UserEntity;
 import com.zinkwork.atm.repository.UserRepository;
@@ -38,7 +40,9 @@ public class AtmController {
 	public ResponseEntity<RespDAO> checkBalance(@RequestHeader("Authorization") String authToken ) {
 		String[] token=authToken.split(" ");
 		String accno=jwt.extractusername(token[1]);
-		return atmService.checkBalance(Long.valueOf(accno));
+		RespDAO resp= new RespDAO("Avaliable balance is "+atmService.checkBalance(Long.valueOf(accno)));
+		return new ResponseEntity<RespDAO>(resp, HttpStatus.OK);
+//		return atmService.checkBalance(Long.valueOf(accno));
 	}
 	
 	@RequestMapping(value = "/withdraw/{amount}")
@@ -46,10 +50,13 @@ public class AtmController {
 		String[] token=authToken.split(" ");
 		String accno=jwt.extractusername(token[1]);
 		try {
-			atmService.withdrawAmount(amount, 1, Long.valueOf(accno));
+			ArrayList<Integer> noteDispensed= atmService.withdrawAmount(amount, 1, Long.valueOf(accno));
+			
 			Map<String, String> respObj= new HashMap<>();
+			String message="Amount deducted successfully. Note details \n";
 			respObj.put("message", "Amount deducted successfully");
-			return new ResponseEntity<Object>(respObj, HttpStatus.OK);
+			ArrayList<Integer> notes = new ArrayList<>();
+			return new ResponseEntity<Object>(new DispenseDAO("Amount deducted successfully", noteDispensed, atmService.checkBalance(Long.valueOf(accno))), HttpStatus.OK);
 		}catch (NumberFormatException e) {
 			RespDAO respObj= new RespDAO(e.getMessage());
 			return new ResponseEntity<Object>(respObj,HttpStatus.BAD_REQUEST);

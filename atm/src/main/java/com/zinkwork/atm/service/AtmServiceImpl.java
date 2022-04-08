@@ -1,5 +1,9 @@
 package com.zinkwork.atm.service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import com.zinkwork.atm.DAO.RespDAO;
 import com.zinkwork.atm.entity.UserEntity;
+import com.zinkwork.atm.exception.InSufficientBalanceException;
 import com.zinkwork.atm.exception.NoAtmBalanceException;
 import com.zinkwork.atm.repository.UserRepository;
 import com.zinkwork.atm.utils.CommonUtils;
@@ -30,13 +35,12 @@ public class AtmServiceImpl implements AtmService{
 	private static final Logger logger = LogManager.getLogger(AtmServiceImpl.class);
 
 	@Override
-	public void withdrawAmount(Long withdrawAmount, Integer atmId,Long accno) {
+	public ArrayList<Integer> withdrawAmount(Long withdrawAmount, Integer atmId,Long accno) {
 		if(atmValidation.atmBalanceCheck(withdrawAmount, atmId)) {
 			if(atmValidation.userBalanceCheck(withdrawAmount, accno)) {
-				commonUtils.deductAmount(withdrawAmount, atmId, accno);
-				logger.info("Amount deducted successfully");
+				return commonUtils.deductAmount(withdrawAmount, atmId, accno);
 			}else {
-				throw new InsufficientAuthenticationException("No sufficient balance in account");
+				throw new InSufficientBalanceException("No sufficient balance in account");
 			}
 		}else {
 			throw new NoAtmBalanceException("No sufficinet Balance in ATM");
@@ -44,11 +48,11 @@ public class AtmServiceImpl implements AtmService{
 	}
 
 	@Override
-	public ResponseEntity<RespDAO> checkBalance(Long accno) {
+	public Double checkBalance(Long accno) {
 		UserEntity userObj=userRepo.findById(accno).get();
 		RespDAO resp= new RespDAO("Avaliable balance is "+userObj.getBalance()+".");
-		return new ResponseEntity<RespDAO>(resp, HttpStatus.OK);
+//		return new ResponseEntity<RespDAO>(resp, HttpStatus.OK);
+		return userObj.getBalance();
 		
 	}
-	
 }
