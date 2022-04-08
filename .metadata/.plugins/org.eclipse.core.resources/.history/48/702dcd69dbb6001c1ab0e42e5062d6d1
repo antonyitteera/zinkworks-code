@@ -1,0 +1,14 @@
+package com.zinkwork.atm.exception;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+@ControllerAdvice
+public class AtmException {
+
+	@ExceptionHandler(value = NoAtmBalanceException.class)
+	public ResponseEntity<Object> exception(NoAtmBalanceException exception){
+		return null;
+	}
+}

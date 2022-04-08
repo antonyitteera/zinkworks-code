@@ -3,12 +3,14 @@ package com.zinkwork.atm.validatiion;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.zinkwork.atm.entity.AtmEntity;
 import com.zinkwork.atm.entity.UserEntity;
 import com.zinkwork.atm.repository.AtmRepository;
 import com.zinkwork.atm.repository.UserRepository;
 
+@Component
 public class AtmValidation {
 
 	@Autowired
@@ -17,7 +19,7 @@ public class AtmValidation {
 	@Autowired
 	private UserRepository userRepo;
 	
-	public boolean atmBalanceCheck(Double withdrawAmount, Integer atmId) { // method to check if the atm has enough withdrawl amount
+	public boolean atmBalanceCheck(Long withdrawAmount, Integer atmId) { // method to check if the atm has enough withdrawl amount
 		Optional<AtmEntity> atmObj=atmRepo.findById(atmId);
 		if(atmObj.isPresent()) {
 			Double atmBal=atmObj.get().getBalance();
@@ -28,11 +30,12 @@ public class AtmValidation {
 		return false;
 	}
 	
-	public boolean userBalanceCheck(Double withdrawAmount,Long accnum) {
+	public boolean userBalanceCheck(Long withdrawAmount,Long accnum) {
 		Optional<UserEntity> userObj=userRepo.findById(accnum);
 		if(userObj.isPresent()) {
 			Double userBal= userObj.get().getBalance();
-			if(userBal>withdrawAmount) {
+			Double overDraftamnt= userObj.get().getOverdraft();
+			if(userBal+overDraftamnt>=withdrawAmount) {
 				return true;
 			}
 		}

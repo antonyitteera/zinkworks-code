@@ -1,0 +1,6 @@
+package com.zinkwork.atm.service;
+
+public interface AtmService {
+
+	void withdrawAmount(Long withdrawAmount, Integer atmId);
+}

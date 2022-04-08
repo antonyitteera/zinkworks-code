@@ -1,0 +1,14 @@
+package com.zinkwork.atm.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class AtmServiceImpl implements AtmService{
+
+	@Override
+	public void withdrawAmount(Long withdrawAmount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

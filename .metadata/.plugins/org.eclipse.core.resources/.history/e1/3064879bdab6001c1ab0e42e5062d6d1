@@ -1,0 +1,8 @@
+package com.zinkwork.atm.exception;
+
+public class NoAtmBalanceException extends RuntimeException {
+
+	public NoAtmBalanceException(String message) {
+		super(message);
+	}
+}

@@ -1,0 +1,30 @@
+package com.zinkwork.atm.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.zinkwork.atm.entity.UserEntity;
+import com.zinkwork.atm.repository.UserRepository;
+
+@RestController
+@RequestMapping(value = "/api/v1")
+public class AtmController {
+	
+	@Autowired
+	UserRepository userRepo;
+	
+	public void loadCash() {
+		
+	}
+	
+	@RequestMapping(value = "/checkBalance/{accno}")
+	public ResponseEntity<UserEntity> checkBalance(long accno) {
+		//userRepo.getOne(accno);
+		return new ResponseEntity<UserEntity>(userRepo.getOne(accno), HttpStatus.OK);
+				
+	}
+
+}

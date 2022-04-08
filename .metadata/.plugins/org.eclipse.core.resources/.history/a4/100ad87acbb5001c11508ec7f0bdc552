@@ -1,0 +1,26 @@
+package com.zinkwork.atm.validatiion;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.zinkwork.atm.entity.AtmEntity;
+import com.zinkwork.atm.repository.AtmRepository;
+
+public class AtmValidation {
+
+	@Autowired
+	private AtmRepository atmRepo;
+	
+	public boolean atmCheckBalance(Double withdrawAmount, Integer atmId) {
+		Optional<AtmEntity> atmObj=atmRepo.findById(atmId);
+		if(atmObj.isPresent()) {
+			Double atmBal=atmObj.get().getBalance();
+			if(atmBal>withdrawAmount) {
+				return true;
+			}
+		}
+		return false;
+	}
+}

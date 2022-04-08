@@ -1,0 +1,5 @@
+package edu.tus.authenticationservice.service;
+
+public class UserDetailServiceImpl {
+
+}

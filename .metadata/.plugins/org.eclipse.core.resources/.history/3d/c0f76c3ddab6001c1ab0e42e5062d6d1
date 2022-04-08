@@ -1,0 +1,24 @@
+package com.zinkwork.atm.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.zinkwork.atm.exception.NoAtmBalanceException;
+import com.zinkwork.atm.validatiion.AtmValidation;
+
+@Service
+public class AtmServiceImpl implements AtmService{
+	
+	@Autowired
+	private AtmValidation atmValidation;
+
+	@Override
+	public void withdrawAmount(Long withdrawAmount, Integer atmId,Long accno) {
+		if(atmValidation.atmBalanceCheck(withdrawAmount, atmId)) {
+			if(atmValidation.userBalanceCheck(withdrawAmount, accnum))
+		}else {
+			throw new NoAtmBalanceException("No sufficinet Balance in ATM");
+		}
+	}
+
+}

@@ -17,7 +17,7 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 			.csrf().disable().
 			authorizeRequests()
 			.antMatchers(HttpMethod.GET, "api/v1/checkBalance/**").hasRole("USER")
-			.antMatchers(HttpMethod.GET, "/wines/search/**").hasRole("BA")
+			.antMatchers(HttpMethod.GET, "api/v1/withdraw/**").hasRole("USER")
 			.antMatchers("/h2-console/**").permitAll()
 			.anyRequest().authenticated();
 		http.headers().frameOptions().disable();

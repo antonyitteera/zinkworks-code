@@ -1,0 +1,36 @@
+package com.zinkwork.atm.utils;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.zinkwork.atm.entity.AtmEntity;
+import com.zinkwork.atm.entity.UserEntity;
+import com.zinkwork.atm.repository.AtmRepository;
+import com.zinkwork.atm.repository.UserRepository;
+
+public class CommonUtils {
+	@Autowired
+	private AtmRepository atmRepo;
+	
+	@Autowired
+	private UserRepository userRepo;
+	
+	@Transactional
+	private void deductAmount(Long withdrawAmount,Integer atmId,Long accno) {
+		UserEntity userObj=userRepo.findById(accno).get();
+		Double currBal=userObj.getBalance();
+		Double newBal= currBal-withdrawAmount;
+		if(newBal>0) {
+			userObj.setBalance(newBal);
+		}else {
+			userObj.setBalance(0.0);
+		}
+		AtmEntity atmObj=atmRepo.findById(atmId).get();
+		Double currAtmBal= atmObj.getBalance();
+		Double newAtmBal=currAtmBal-withdrawAmount;
+		atmObj.setBalance(newAtmBal);
+		userRepo.save(userObj);
+		atmRepo.save(atmObj);
+	}
+}

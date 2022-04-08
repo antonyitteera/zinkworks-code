@@ -1,0 +1,5 @@
+package com.zinkwork.atm.controller;
+
+public class UserController {
+
+}

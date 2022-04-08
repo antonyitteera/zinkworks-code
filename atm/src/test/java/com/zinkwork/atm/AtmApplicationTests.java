@@ -7,7 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 class AtmApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void withDrawAmountTest() {
+		
 	}
 
+	
 }

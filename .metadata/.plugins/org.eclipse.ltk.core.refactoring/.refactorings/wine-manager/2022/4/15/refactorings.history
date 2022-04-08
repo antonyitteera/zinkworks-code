@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ResourceServerConfiguration.java&apos; to &apos;atm/src/main/java/com.zinkwork.atm.security&apos;&#x0D;&#x0A;- Original project: &apos;wine-manager&apos;&#x0D;&#x0A;- Destination element: &apos;atm/src/main/java/com.zinkwork.atm.security&apos;&#x0D;&#x0A;- Original element: &apos;edu.tus.winemanager.security.ResourceServerConfiguration.java&apos;" description="Copy compilation unit" destination="=atm/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.zinkwork.atm.security" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;edu.tus.winemanager.security{ResourceServerConfiguration.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1649273086588" units="1" version="1.0"/>
+</session>

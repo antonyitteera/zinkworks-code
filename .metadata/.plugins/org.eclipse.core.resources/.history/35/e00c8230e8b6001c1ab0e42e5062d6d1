@@ -1,0 +1,5 @@
+package com.zinkwork.atm.utils;
+
+public class CommonUtils {
+
+}

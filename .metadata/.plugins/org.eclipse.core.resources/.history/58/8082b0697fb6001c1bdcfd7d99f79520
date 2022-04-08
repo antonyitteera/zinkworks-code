@@ -1,0 +1,5 @@
+package com.zinkwork.atm.service;
+
+public interface AtmService {
+
+}

@@ -1,8 +1,12 @@
 package com.zinkwork.atm.service;
 
-import org.springframework.stereotype.Service;
+import org.springframework.http.ResponseEntity;
 
-@Service
-public class AtmService {
+import com.zinkwork.atm.DAO.RespDAO;
 
+public interface AtmService {
+
+	void withdrawAmount(Long withdrawAmount, Integer atmId, Long accnum);
+	
+	ResponseEntity<RespDAO> checkBalance(Long accno);
 }

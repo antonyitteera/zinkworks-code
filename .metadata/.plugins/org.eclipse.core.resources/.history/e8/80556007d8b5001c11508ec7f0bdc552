@@ -1,0 +1,5 @@
+package com.zinkwork.atm.security;
+
+public class CustomAuthenticationFilter {
+
+}
