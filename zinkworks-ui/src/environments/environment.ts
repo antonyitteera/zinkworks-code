@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  loginServiceBaseUrl : 'http://localhost:9999'
+  loginServiceBaseUrl : 'http://localhost:9999',
+  atmServiceBaseUrl : 'http://localhost:8080'
 };
 
 /*

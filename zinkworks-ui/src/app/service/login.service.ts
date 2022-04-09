@@ -18,6 +18,9 @@ export class LoginService {
       "username":account,
       "password":pin
     })
+  }
 
+  getBalance(){
+    return this.http.get(`${environment.atmServiceBaseUrl}/api/v1/retrievebalance`);
   }
 }

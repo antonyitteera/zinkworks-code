@@ -51,6 +51,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { LoginService } from './service/login.service';
 import { AtmInterfaceComponent } from './atm-interface/atm-interface.component';
+import { AtmService } from './service/atm.service';
 const materialModules =  [
   MatAutocompleteModule,
   MatCheckboxModule,
@@ -110,7 +111,8 @@ const materialModules =  [
     ...materialModules
   ],
   providers: [
-    LoginService
+    LoginService,
+    AtmService
   ],
   bootstrap: [AppComponent]
 })

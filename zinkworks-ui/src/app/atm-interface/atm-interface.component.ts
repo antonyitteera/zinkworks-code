@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AtmService } from '../service/atm.service';
 import { LoginService } from '../service/login.service';
 
 @Component({
@@ -9,7 +10,8 @@ import { LoginService } from '../service/login.service';
 })
 export class AtmInterfaceComponent implements OnInit {
 
-  constructor(private loginService:LoginService,private router: Router) { }
+  
+  constructor(private loginService:LoginService,private router: Router,private atmService:AtmService) { }
 
   ngOnInit(): void {
       if(this.loginService.token == ''){
@@ -18,7 +20,13 @@ export class AtmInterfaceComponent implements OnInit {
   }
 
   checkBalance(){
-    
+    this.atmService.getBalance().subscribe(i=>{
+      console.log('dasd');
+      
+    },err=>{
+      console.log(err);
+      
+    })
   }
 
 }
