@@ -1,0 +1,19 @@
+<div style="
+display: flex;
+justify-content: center;
+align-items: center;
+/* margin-bottom: 213px; */
+/* padding: 20px; */
+margin-top: 23%;
+flex-direction: column;">
+    <mat-form-field appearance="outline">
+        <mat-label>Account Number</mat-label>
+        <input matInput placeholder="Placeholder" [(ngModel)]="account">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>PIN</mat-label>
+        <input matInput placeholder="Placeholder" [(ngModel)]="pin">
+    </mat-form-field>
+    <button mat-button color="primary" style="border: 1px solid;" (click)="login()">Login</button>
+</div>
