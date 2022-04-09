@@ -10,6 +10,6 @@ import com.zinkwork.atm.DAO.RespDAO;
 public interface AtmService {
 
 	ArrayList<Integer> withdrawAmount(Long withdrawAmount, Integer atmId, Long accnum);
-	
-	Double checkBalance(Long accno);
+
+	Double retrieveBalance(Long accno);
 }

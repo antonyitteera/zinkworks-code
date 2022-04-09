@@ -6,8 +6,9 @@
 		<item key="wholeword" value="true"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="validateToken"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="MockMaker"/>
 			<item value="validateToken"/>
 			<item value="jwt"/>
 			<item value="code"/>

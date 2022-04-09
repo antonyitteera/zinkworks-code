@@ -48,10 +48,8 @@ public class AtmServiceImpl implements AtmService{
 	}
 
 	@Override
-	public Double checkBalance(Long accno) {
+	public Double retrieveBalance(Long accno) {
 		UserEntity userObj=userRepo.findById(accno).get();
-		RespDAO resp= new RespDAO("Avaliable balance is "+userObj.getBalance()+".");
-//		return new ResponseEntity<RespDAO>(resp, HttpStatus.OK);
 		return userObj.getBalance();
 		
 	}

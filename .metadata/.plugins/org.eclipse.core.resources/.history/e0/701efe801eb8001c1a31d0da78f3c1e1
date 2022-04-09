@@ -1,0 +1,16 @@
+package com.zinkwork.atm;
+
+import org.junit.Rule;
+import org.junit.rules.ExpectedException;
+import org.junit.runner.RunWith;
+import org.mockito.junit.MockitoJUnitRunner;
+
+@RunWith(MockitoJUnitRunner.class)
+public class AtmValidationTest {
+
+	@Rule
+	public ExpectedException exceptionRule= ExpectedException.none();
+
+	
+
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="atm" project="atm" tests="8" started="8" failures="1" errors="0" ignored="0">
+  <testsuite name="com.zinkwork.atm.AtmApplicationTests" time="0.775">
+    <testcase name="withdrawAmountThenNoAtmBalanceTest" classname="com.zinkwork.atm.AtmApplicationTests" time="0.769"/>
+    <testcase name="checkBalanceThenNoUserBalanceTest" classname="com.zinkwork.atm.AtmApplicationTests" time="0.003"/>
+    <testcase name="withdrawAmountThenNoUserBalanceTest" classname="com.zinkwork.atm.AtmApplicationTests" time="0.003"/>
+  </testsuite>
+  <testsuite name="com.zinkwork.atm.CommonUtilsTest" time="0.073">
+    <testcase name="whenNoNotesThenException" classname="com.zinkwork.atm.CommonUtilsTest" time="0.073">
+      <failure>java.lang.AssertionError: &#13;
+Expected: (exception with message a string containing "Notes not available. Please try other amount" and an instance of com.zinkwork.atm.exception.NoNotesAvailableException)&#13;
+     but: exception with message a string containing "Notes not available. Please try other amount" message was "
+The used MockMaker SubclassByteBuddyMockMaker does not support the creation of static mocks
+
+Mockito's inline mock maker supports static mocks based on the Instrumentation API.
+You can simply enable this mock mode, by placing the 'mockito-inline' artifact where you are currently using 'mockito-core'.
+Note that Mockito's inline mock maker is not supported on Android."
+Stacktrace was: org.mockito.exceptions.base.MockitoException: 
+The used MockMaker SubclassByteBuddyMockMaker does not support the creation of static mocks
+
+Mockito's inline mock maker supports static mocks based on the Instrumentation API.
+You can simply enable this mock mode, by placing the 'mockito-inline' artifact where you are currently using 'mockito-core'.
+Note that Mockito's inline mock maker is not supported on Android.&#13;
+	at com.zinkwork.atm.CommonUtilsTest.whenNoNotesThenException(CommonUtilsTest.java:63)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)&#13;
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)&#13;
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)&#13;
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:41)&#13;
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)&#13;
+	at org.junit.Assert.assertThat(Assert.java:956)&#13;
+	at org.junit.Assert.assertThat(Assert.java:923)&#13;
+	at org.junit.rules.ExpectedException.handleException(ExpectedException.java:252)&#13;
+	at org.junit.rules.ExpectedException.access$000(ExpectedException.java:106)&#13;
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:241)&#13;
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)&#13;
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:41)&#13;
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.zinkwork.atm.AtmValidationTest" time="0.005">
+    <testcase name="whenNoUserBalanceThenFalse" classname="com.zinkwork.atm.AtmValidationTest" time="0.002"/>
+    <testcase name="whenUserBalanceThenTrue" classname="com.zinkwork.atm.AtmValidationTest" time="0.001"/>
+    <testcase name="whenNoAtmBalanceThenFalse" classname="com.zinkwork.atm.AtmValidationTest" time="0.001"/>
+    <testcase name="whenAtmBalanceThenTrue" classname="com.zinkwork.atm.AtmValidationTest" time="0.001"/>
+  </testsuite>
+</testrun>

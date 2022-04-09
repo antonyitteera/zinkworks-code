@@ -1,0 +1,39 @@
+package com.zinkwork.atm;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.zinkwork.atm.repository.AtmRepository;
+import com.zinkwork.atm.repository.NoteRepository;
+import com.zinkwork.atm.repository.UserRepository;
+import com.zinkwork.atm.utils.CommonUtils;
+import com.zinkwork.atm.utils.NoteDispenserUtils;
+
+@RunWith(MockitoJUnitRunner.class)
+public class CommonUtilsTest {
+	
+	@Mock
+	private NoteDispenserUtils noteDispenser;
+	
+	@Mock
+	private AtmRepository atmRepo;
+	
+	@Mock
+	private UserRepository userRepo;
+	
+	@Mock
+	private NoteRepository noteRepo;
+	
+	@InjectMocks
+	private CommonUtils commonUtils;
+	
+	@Test
+	private void whenNoNotesThenException() {
+		
+	}
+
+}

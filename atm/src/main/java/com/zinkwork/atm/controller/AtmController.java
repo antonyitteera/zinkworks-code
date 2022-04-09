@@ -36,13 +36,12 @@ public class AtmController {
 		
 	}
 	
-	@RequestMapping(value = "/checkbalance")
+	@RequestMapping(value = "/retrievebalance")
 	public ResponseEntity<RespDAO> checkBalance(@RequestHeader("Authorization") String authToken ) {
 		String[] token=authToken.split(" ");
 		String accno=jwt.extractusername(token[1]);
-		RespDAO resp= new RespDAO("Avaliable balance is "+atmService.checkBalance(Long.valueOf(accno)));
+		RespDAO resp= new RespDAO("Avaliable balance is "+atmService.retrieveBalance(Long.valueOf(accno)));
 		return new ResponseEntity<RespDAO>(resp, HttpStatus.OK);
-//		return atmService.checkBalance(Long.valueOf(accno));
 	}
 	
 	@RequestMapping(value = "/withdraw/{amount}")
@@ -53,10 +52,8 @@ public class AtmController {
 			ArrayList<Integer> noteDispensed= atmService.withdrawAmount(amount, 1, Long.valueOf(accno));
 			
 			Map<String, String> respObj= new HashMap<>();
-			String message="Amount deducted successfully. Note details \n";
 			respObj.put("message", "Amount deducted successfully");
-			ArrayList<Integer> notes = new ArrayList<>();
-			return new ResponseEntity<Object>(new DispenseDAO("Amount deducted successfully", noteDispensed, atmService.checkBalance(Long.valueOf(accno))), HttpStatus.OK);
+			return new ResponseEntity<Object>(new DispenseDAO("Amount deducted successfully", noteDispensed, atmService.retrieveBalance(Long.valueOf(accno))), HttpStatus.OK);
 		}catch (NumberFormatException e) {
 			RespDAO respObj= new RespDAO(e.getMessage());
 			return new ResponseEntity<Object>(respObj,HttpStatus.BAD_REQUEST);

@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="atm" project="atm" tests="8" started="8" failures="0" errors="8" ignored="0">
+  <testsuite name="com.zinkwork.atm.AtmApplicationTests" time="0.102">
+    <testcase name="withdrawAmountThenNoAtmBalanceTest" classname="com.zinkwork.atm.AtmApplicationTests" time="0.096">
+      <error>java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:84)&#13;
+	at com.sun.proxy.$Proxy10.isTypeMockable(Unknown Source)&#13;
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:33)&#13;
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:250)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:232)&#13;
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:60)&#13;
+	at org.mockito.Mockito.mock(Mockito.java:1949)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.processAnnotationForMock(MockAnnotationProcessor.java:66)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:27)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:24)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.createMockFor(IndependentAnnotationEngine.java:46)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.process(IndependentAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processIndependentAnnotations(InjectingAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:47)&#13;
+	at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:82)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:49)&#13;
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:258)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:99)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:105)&#13;
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:40)&#13;
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.lang.IllegalStateException: Failed to load interface org.mockito.plugins.MockMaker implementation declared in sun.misc.CompoundEnumeration@643b1d11&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:57)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:65)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:50)&#13;
+	at org.mockito.internal.configuration.plugins.PluginRegistry.&lt;init&gt;(PluginRegistry.java:19)&#13;
+	at org.mockito.internal.configuration.plugins.Plugins.&lt;clinit&gt;(Plugins.java:16)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:46)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:44)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:46)&#13;
+	... 23 more&#13;
+Caused by: java.lang.reflect.InvocationTargetException&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:52)&#13;
+	... 30 more&#13;
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if you are running on a JRE. Either install a JDK or add JNA to the class path.
+Java               : 1.8
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 25.291-b10
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 1.8.0_291-b10
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;init&gt;(InlineByteBuddyMockMaker.java:234)&#13;
+	... 35 more&#13;
+Caused by: java.lang.IllegalStateException: No compatible attachment provider is available&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:602)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:586)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:538)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:515)&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;clinit&gt;(InlineByteBuddyMockMaker.java:117)&#13;
+	... 35 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="checkBalanceThenNoUserBalanceTest" classname="com.zinkwork.atm.AtmApplicationTests" time="0.001">
+      <error>java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:84)&#13;
+	at com.sun.proxy.$Proxy10.isTypeMockable(Unknown Source)&#13;
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:33)&#13;
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:250)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:232)&#13;
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:60)&#13;
+	at org.mockito.Mockito.mock(Mockito.java:1949)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.processAnnotationForMock(MockAnnotationProcessor.java:66)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:27)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:24)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.createMockFor(IndependentAnnotationEngine.java:46)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.process(IndependentAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processIndependentAnnotations(InjectingAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:47)&#13;
+	at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:82)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:49)&#13;
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:258)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:99)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:105)&#13;
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:40)&#13;
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.lang.IllegalStateException: Failed to load interface org.mockito.plugins.MockMaker implementation declared in sun.misc.CompoundEnumeration@643b1d11&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:57)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:65)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:50)&#13;
+	at org.mockito.internal.configuration.plugins.PluginRegistry.&lt;init&gt;(PluginRegistry.java:19)&#13;
+	at org.mockito.internal.configuration.plugins.Plugins.&lt;clinit&gt;(Plugins.java:16)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:46)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:44)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:46)&#13;
+	... 23 more&#13;
+Caused by: java.lang.reflect.InvocationTargetException&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:52)&#13;
+	... 30 more&#13;
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if you are running on a JRE. Either install a JDK or add JNA to the class path.
+Java               : 1.8
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 25.291-b10
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 1.8.0_291-b10
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;init&gt;(InlineByteBuddyMockMaker.java:234)&#13;
+	... 35 more&#13;
+Caused by: java.lang.IllegalStateException: No compatible attachment provider is available&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:602)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:586)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:538)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:515)&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;clinit&gt;(InlineByteBuddyMockMaker.java:117)&#13;
+	... 35 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="withdrawAmountThenNoUserBalanceTest" classname="com.zinkwork.atm.AtmApplicationTests" time="0.001">
+      <error>java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:84)&#13;
+	at com.sun.proxy.$Proxy10.isTypeMockable(Unknown Source)&#13;
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:33)&#13;
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:250)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:232)&#13;
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:60)&#13;
+	at org.mockito.Mockito.mock(Mockito.java:1949)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.processAnnotationForMock(MockAnnotationProcessor.java:66)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:27)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:24)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.createMockFor(IndependentAnnotationEngine.java:46)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.process(IndependentAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processIndependentAnnotations(InjectingAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:47)&#13;
+	at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:82)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:49)&#13;
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:258)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:99)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:105)&#13;
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:40)&#13;
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.lang.IllegalStateException: Failed to load interface org.mockito.plugins.MockMaker implementation declared in sun.misc.CompoundEnumeration@643b1d11&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:57)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:65)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:50)&#13;
+	at org.mockito.internal.configuration.plugins.PluginRegistry.&lt;init&gt;(PluginRegistry.java:19)&#13;
+	at org.mockito.internal.configuration.plugins.Plugins.&lt;clinit&gt;(Plugins.java:16)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:46)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:44)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:46)&#13;
+	... 23 more&#13;
+Caused by: java.lang.reflect.InvocationTargetException&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:52)&#13;
+	... 30 more&#13;
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if you are running on a JRE. Either install a JDK or add JNA to the class path.
+Java               : 1.8
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 25.291-b10
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 1.8.0_291-b10
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;init&gt;(InlineByteBuddyMockMaker.java:234)&#13;
+	... 35 more&#13;
+Caused by: java.lang.IllegalStateException: No compatible attachment provider is available&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:602)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:586)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:538)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:515)&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;clinit&gt;(InlineByteBuddyMockMaker.java:117)&#13;
+	... 35 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.zinkwork.atm.CommonUtilsTest" time="0.001">
+    <testcase name="whenNoNotesThenException" classname="com.zinkwork.atm.CommonUtilsTest" time="0.001">
+      <error>java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:84)&#13;
+	at com.sun.proxy.$Proxy10.isTypeMockable(Unknown Source)&#13;
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:33)&#13;
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:250)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:232)&#13;
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:60)&#13;
+	at org.mockito.Mockito.mock(Mockito.java:1949)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.processAnnotationForMock(MockAnnotationProcessor.java:66)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:27)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:24)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.createMockFor(IndependentAnnotationEngine.java:46)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.process(IndependentAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processIndependentAnnotations(InjectingAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:47)&#13;
+	at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:82)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:49)&#13;
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:258)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:99)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:105)&#13;
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:40)&#13;
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.lang.IllegalStateException: Failed to load interface org.mockito.plugins.MockMaker implementation declared in sun.misc.CompoundEnumeration@643b1d11&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:57)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:65)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:50)&#13;
+	at org.mockito.internal.configuration.plugins.PluginRegistry.&lt;init&gt;(PluginRegistry.java:19)&#13;
+	at org.mockito.internal.configuration.plugins.Plugins.&lt;clinit&gt;(Plugins.java:16)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:46)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:44)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:46)&#13;
+	... 23 more&#13;
+Caused by: java.lang.reflect.InvocationTargetException&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:52)&#13;
+	... 30 more&#13;
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if you are running on a JRE. Either install a JDK or add JNA to the class path.
+Java               : 1.8
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 25.291-b10
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 1.8.0_291-b10
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;init&gt;(InlineByteBuddyMockMaker.java:234)&#13;
+	... 35 more&#13;
+Caused by: java.lang.IllegalStateException: No compatible attachment provider is available&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:602)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:586)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:538)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:515)&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;clinit&gt;(InlineByteBuddyMockMaker.java:117)&#13;
+	... 35 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.zinkwork.atm.AtmValidationTest" time="0.004">
+    <testcase name="whenNoUserBalanceThenFalse" classname="com.zinkwork.atm.AtmValidationTest" time="0.001">
+      <error>java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:84)&#13;
+	at com.sun.proxy.$Proxy10.isTypeMockable(Unknown Source)&#13;
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:33)&#13;
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:250)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:232)&#13;
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:60)&#13;
+	at org.mockito.Mockito.mock(Mockito.java:1949)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.processAnnotationForMock(MockAnnotationProcessor.java:66)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:27)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:24)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.createMockFor(IndependentAnnotationEngine.java:46)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.process(IndependentAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processIndependentAnnotations(InjectingAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:47)&#13;
+	at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:82)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:49)&#13;
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:258)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:99)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:105)&#13;
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:40)&#13;
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.lang.IllegalStateException: Failed to load interface org.mockito.plugins.MockMaker implementation declared in sun.misc.CompoundEnumeration@643b1d11&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:57)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:65)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:50)&#13;
+	at org.mockito.internal.configuration.plugins.PluginRegistry.&lt;init&gt;(PluginRegistry.java:19)&#13;
+	at org.mockito.internal.configuration.plugins.Plugins.&lt;clinit&gt;(Plugins.java:16)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:46)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:44)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:46)&#13;
+	... 23 more&#13;
+Caused by: java.lang.reflect.InvocationTargetException&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:52)&#13;
+	... 30 more&#13;
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if you are running on a JRE. Either install a JDK or add JNA to the class path.
+Java               : 1.8
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 25.291-b10
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 1.8.0_291-b10
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;init&gt;(InlineByteBuddyMockMaker.java:234)&#13;
+	... 35 more&#13;
+Caused by: java.lang.IllegalStateException: No compatible attachment provider is available&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:602)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:586)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:538)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:515)&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;clinit&gt;(InlineByteBuddyMockMaker.java:117)&#13;
+	... 35 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="whenUserBalanceThenTrue" classname="com.zinkwork.atm.AtmValidationTest" time="0.001">
+      <error>java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:84)&#13;
+	at com.sun.proxy.$Proxy10.isTypeMockable(Unknown Source)&#13;
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:33)&#13;
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:250)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:232)&#13;
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:60)&#13;
+	at org.mockito.Mockito.mock(Mockito.java:1949)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.processAnnotationForMock(MockAnnotationProcessor.java:66)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:27)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:24)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.createMockFor(IndependentAnnotationEngine.java:46)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.process(IndependentAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processIndependentAnnotations(InjectingAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:47)&#13;
+	at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:82)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:49)&#13;
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:258)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:99)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:105)&#13;
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:40)&#13;
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.lang.IllegalStateException: Failed to load interface org.mockito.plugins.MockMaker implementation declared in sun.misc.CompoundEnumeration@643b1d11&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:57)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:65)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:50)&#13;
+	at org.mockito.internal.configuration.plugins.PluginRegistry.&lt;init&gt;(PluginRegistry.java:19)&#13;
+	at org.mockito.internal.configuration.plugins.Plugins.&lt;clinit&gt;(Plugins.java:16)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:46)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:44)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:46)&#13;
+	... 23 more&#13;
+Caused by: java.lang.reflect.InvocationTargetException&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:52)&#13;
+	... 30 more&#13;
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if you are running on a JRE. Either install a JDK or add JNA to the class path.
+Java               : 1.8
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 25.291-b10
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 1.8.0_291-b10
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;init&gt;(InlineByteBuddyMockMaker.java:234)&#13;
+	... 35 more&#13;
+Caused by: java.lang.IllegalStateException: No compatible attachment provider is available&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:602)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:586)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:538)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:515)&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;clinit&gt;(InlineByteBuddyMockMaker.java:117)&#13;
+	... 35 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="whenNoAtmBalanceThenFalse" classname="com.zinkwork.atm.AtmValidationTest" time="0.0">
+      <error>java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:84)&#13;
+	at com.sun.proxy.$Proxy10.isTypeMockable(Unknown Source)&#13;
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:33)&#13;
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:250)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:232)&#13;
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:60)&#13;
+	at org.mockito.Mockito.mock(Mockito.java:1949)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.processAnnotationForMock(MockAnnotationProcessor.java:66)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:27)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:24)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.createMockFor(IndependentAnnotationEngine.java:46)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.process(IndependentAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processIndependentAnnotations(InjectingAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:47)&#13;
+	at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:82)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:49)&#13;
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:258)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:99)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:105)&#13;
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:40)&#13;
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.lang.IllegalStateException: Failed to load interface org.mockito.plugins.MockMaker implementation declared in sun.misc.CompoundEnumeration@643b1d11&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:57)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:65)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:50)&#13;
+	at org.mockito.internal.configuration.plugins.PluginRegistry.&lt;init&gt;(PluginRegistry.java:19)&#13;
+	at org.mockito.internal.configuration.plugins.Plugins.&lt;clinit&gt;(Plugins.java:16)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:46)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:44)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:46)&#13;
+	... 23 more&#13;
+Caused by: java.lang.reflect.InvocationTargetException&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:52)&#13;
+	... 30 more&#13;
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if you are running on a JRE. Either install a JDK or add JNA to the class path.
+Java               : 1.8
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 25.291-b10
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 1.8.0_291-b10
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;init&gt;(InlineByteBuddyMockMaker.java:234)&#13;
+	... 35 more&#13;
+Caused by: java.lang.IllegalStateException: No compatible attachment provider is available&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:602)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:586)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:538)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:515)&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;clinit&gt;(InlineByteBuddyMockMaker.java:117)&#13;
+	... 35 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="whenAtmBalanceThenTrue" classname="com.zinkwork.atm.AtmValidationTest" time="0.001">
+      <error>java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:84)&#13;
+	at com.sun.proxy.$Proxy10.isTypeMockable(Unknown Source)&#13;
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:33)&#13;
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:250)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:232)&#13;
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:60)&#13;
+	at org.mockito.Mockito.mock(Mockito.java:1949)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.processAnnotationForMock(MockAnnotationProcessor.java:66)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:27)&#13;
+	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:24)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.createMockFor(IndependentAnnotationEngine.java:46)&#13;
+	at org.mockito.internal.configuration.IndependentAnnotationEngine.process(IndependentAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processIndependentAnnotations(InjectingAnnotationEngine.java:73)&#13;
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:47)&#13;
+	at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:82)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:49)&#13;
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:258)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:99)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:105)&#13;
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:40)&#13;
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.lang.IllegalStateException: Failed to load interface org.mockito.plugins.MockMaker implementation declared in sun.misc.CompoundEnumeration@643b1d11&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:57)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:65)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:50)&#13;
+	at org.mockito.internal.configuration.plugins.PluginRegistry.&lt;init&gt;(PluginRegistry.java:19)&#13;
+	at org.mockito.internal.configuration.plugins.Plugins.&lt;clinit&gt;(Plugins.java:16)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:46)&#13;
+	at org.mockito.internal.runners.RunnerFactory$2.get(RunnerFactory.java:44)&#13;
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:46)&#13;
+	... 23 more&#13;
+Caused by: java.lang.reflect.InvocationTargetException&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.mockito.internal.configuration.plugins.PluginInitializer.loadImpl(PluginInitializer.java:52)&#13;
+	... 30 more&#13;
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if you are running on a JRE. Either install a JDK or add JNA to the class path.
+Java               : 1.8
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 25.291-b10
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 1.8.0_291-b10
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;init&gt;(InlineByteBuddyMockMaker.java:234)&#13;
+	... 35 more&#13;
+Caused by: java.lang.IllegalStateException: No compatible attachment provider is available&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:602)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:586)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:538)&#13;
+	at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:515)&#13;
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.&lt;clinit&gt;(InlineByteBuddyMockMaker.java:117)&#13;
+	... 35 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>
