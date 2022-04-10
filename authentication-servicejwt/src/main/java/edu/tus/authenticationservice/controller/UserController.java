@@ -23,7 +23,7 @@ import edu.tus.authenticationservice.view.LoginOutput;
 
 @CrossOrigin("*")
 @RestController
-@RequestMapping("/User")
+@RequestMapping("/user")
 public class UserController{
 
 	@Autowired

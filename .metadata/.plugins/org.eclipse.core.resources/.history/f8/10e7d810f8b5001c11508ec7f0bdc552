@@ -1,5 +1,0 @@
-package edu.tus.authenticationservice.security;
-
-public class ResourceServerConfiguration {
-
-}

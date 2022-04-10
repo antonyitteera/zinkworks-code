@@ -5912,3 +5912,158 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2022-04-09 22:48:09,891 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-04-09 22:48:09,891 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-04-09 22:48:09,891 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Antony Itteera\Documents\zinkwork\code\atm\src\test\resources
+2022-04-10 03:12:37,247 [Worker-160: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1380) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:489) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:644) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) [org.eclipse.ui.console_3.9.100.v20200215-1209.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:na]
+2022-04-10 03:12:55,580 [Worker-159: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1380) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:489) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:644) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) [org.eclipse.ui.console_3.9.100.v20200215-1209.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:na]
+2022-04-10 03:13:05,438 [Worker-143: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1380) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:489) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:644) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) [org.eclipse.ui.console_3.9.100.v20200215-1209.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:na]
+2022-04-10 03:13:05,443 [Worker-143: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1380) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:489) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:644) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) [org.eclipse.ui.console_3.9.100.v20200215-1209.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:na]
+2022-04-10 03:13:05,449 [Worker-143: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1380) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:489) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:644) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) [org.eclipse.ui.console_3.9.100.v20200215-1209.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:na]
+2022-04-10 03:13:05,454 [Worker-143: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1380) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:489) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:644) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) [org.eclipse.ui.console_3.9.100.v20200215-1209.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:na]
+2022-04-10 03:13:05,512 [Worker-161: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration authentication-servicejwt - AuthenticationServiceApplication at file:/C:/Users/Antony%20Itteera/Documents/zinkwork/code/.metadata/.plugins/org.eclipse.debug.core/.launches/authentication-servicejwt%20-%20AuthenticationServiceApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1380) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:489) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:644) ~[org.eclipse.debug.core_3.15.0.v20200224-0654.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87) [org.eclipse.m2e.launching_1.15.0.20200225-1921.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.disconnect(ConsoleLineNotifier.java:71) [org.eclipse.debug.ui_3.14.400.v20200222-1431.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$CompiledPatternMatchListener.dispose(ConsolePatternMatcher.java:198) [org.eclipse.ui.console_3.9.100.v20200215-1209.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher.disconnect(ConsolePatternMatcher.java:260) [org.eclipse.ui.console_3.9.100.v20200215-1209.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:164) [org.eclipse.ui.console_3.9.100.v20200215-1209.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:na]
+2022-04-10 03:13:56,147 [Worker-112: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.tus.authenticationservice:authentication-service:0.0.1-SNAPSHOT @ C:\Users\Antony Itteera\Documents\zinkwork\code\authentication-servicejwt\pom.xml.
+2022-04-10 03:14:12,055 [Worker-112: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authentication-servicejwt/src/main/java
+2022-04-10 03:14:12,056 [Worker-112: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authentication-servicejwt/src/main/resources
+2022-04-10 03:14:12,056 [Worker-112: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authentication-servicejwt/src/main/resources
+2022-04-10 03:14:12,057 [Worker-112: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authentication-servicejwt/src/test/java
+2022-04-10 03:14:12,058 [Worker-112: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authentication-servicejwt/src/test/resources
+2022-04-10 03:14:14,230 [Worker-112: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 46 sec
+2022-04-10 03:15:12,330 [Worker-157: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:15:12,331 [Worker-157: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:15:12,473 [Worker-157: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:15:12,518 [Worker-157: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:15:12,628 [Worker-157: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:15:12,629 [Worker-157: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:15:12,630 [Worker-157: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-10 03:18:48,490 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:18:48,490 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:18:48,492 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:18:52,881 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:18:52,888 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:18:52,888 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:18:52,889 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-10 03:26:33,268 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:26:33,269 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:26:33,271 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:26:39,862 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:26:39,948 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:26:39,948 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:26:39,948 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-10 03:28:21,936 [Worker-166: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:28:21,936 [Worker-166: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:28:21,948 [Worker-166: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:28:24,158 [Worker-166: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:28:24,166 [Worker-166: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:28:24,167 [Worker-166: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:28:24,168 [Worker-166: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-10 03:31:41,993 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-04-10 03:31:47,693 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:31:47,694 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:31:47,702 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:31:47,778 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-10 03:31:47,785 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:31:47,786 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:31:47,786 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Antony Itteera\Documents\zinkwork\code\atm\src\test\resources
+2022-04-10 03:32:28,484 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-10 03:32:30,101 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.tus.authenticationservice:authentication-service:0.0.1-SNAPSHOT @ C:\Users\Antony Itteera\Documents\zinkwork\code\authentication-servicejwt\pom.xml.
+2022-04-10 03:32:31,134 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.zinkwork:atm:0.0.1-SNAPSHOT @ C:\Users\Antony Itteera\Documents\zinkwork\code\atm\pom.xml.
+2022-04-10 03:32:32,811 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /atm/src/main/java
+2022-04-10 03:32:32,812 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /atm/src/main/resources
+2022-04-10 03:32:32,812 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /atm/src/main/resources
+2022-04-10 03:32:32,814 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /atm/src/test/java
+2022-04-10 03:32:33,154 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authentication-servicejwt/src/main/java
+2022-04-10 03:32:33,155 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authentication-servicejwt/src/main/resources
+2022-04-10 03:32:33,156 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authentication-servicejwt/src/main/resources
+2022-04-10 03:32:33,157 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authentication-servicejwt/src/test/java
+2022-04-10 03:32:33,157 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authentication-servicejwt/src/test/resources
+2022-04-10 03:32:33,692 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 5 sec
+2022-04-10 03:32:36,258 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:32:36,259 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:32:36,260 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:32:36,286 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-10 03:32:36,299 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:32:36,299 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:32:36,299 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Antony Itteera\Documents\zinkwork\code\atm\src\test\resources
+2022-04-10 03:32:37,927 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:32:37,927 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-10 03:32:37,927 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:32:37,929 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-10 03:32:37,935 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-10 03:32:37,935 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.

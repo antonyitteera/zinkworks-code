@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-<fullyQualifiedTypeName name="io.jsonwebtoken.Claims"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.function.Function"/>
 <fullyQualifiedTypeName name="io.jsonwebtoken.Jwts"/>
@@ -39,25 +37,27 @@
 <fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="org.aspectj.weaver.bcel.ExceptionRange"/>
 <fullyQualifiedTypeName name="com.zinkwork.atm.validatiion.AtmValidation"/>
-<fullyQualifiedTypeName name="org.mockito.ArgumentMatchers"/>
 <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
 <fullyQualifiedTypeName name="org.mockito.junit.MockitoJUnitRunner"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.zinkwork.atm.utils.CommonUtils"/>
 <fullyQualifiedTypeName name="org.mockito.InjectMocks"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="com.zinkwork.atm.entity.UserEntity"/>
-<fullyQualifiedTypeName name="com.zinkwork.atm.entity.AtmEntity"/>
 <fullyQualifiedTypeName name="java.util.Optional"/>
 <fullyQualifiedTypeName name="org.junit.Rule"/>
 <fullyQualifiedTypeName name="org.junit.rules.ExpectedException"/>
-<fullyQualifiedTypeName name="com.zinkwork.atm.exception.NoNotesAvailableException"/>
 <fullyQualifiedTypeName name="org.mockito.Mock"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.mockito.MockedStatic"/>
 <fullyQualifiedTypeName name="org.mockito.Mockito"/>
-<fullyQualifiedTypeName name="com.zinkwork.atm.utils.NoteDispenserUtils"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="com.zinkwork.atm.entity.NoteEntity"/>
+<fullyQualifiedTypeName name="com.zinkwork.atm.entity.UserEntity"/>
+<fullyQualifiedTypeName name="com.zinkwork.atm.entity.AtmEntity"/>
+<fullyQualifiedTypeName name="com.zinkwork.atm.utils.NoteDispenserUtils"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
+<fullyQualifiedTypeName name="com.zinkwork.atm.exception.NoNotesAvailableException"/>
+<fullyQualifiedTypeName name="org.mockito.ArgumentMatchers"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
 </qualifiedTypeNameHistroy>

@@ -33,7 +33,7 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
 		http.cors().and().csrf().disable()
 		// dont authenticate this particular request
 		.authorizeRequests()
-		.antMatchers("/User/login").permitAll()
+		.antMatchers("/user/login").permitAll()
 		.antMatchers("/h2-console/**").permitAll().
 		// all other requests need to be authenticated
 		anyRequest().authenticated().and().

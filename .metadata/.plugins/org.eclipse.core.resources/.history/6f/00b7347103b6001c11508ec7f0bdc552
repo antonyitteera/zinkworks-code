@@ -1,5 +1,0 @@
-package edu.tus.authenticationservice.controller;
-
-public class UserController {
-
-}

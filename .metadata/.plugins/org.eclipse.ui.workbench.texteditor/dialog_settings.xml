@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="PowerMockMaker"/>
 			<item value="MockMaker"/>
 			<item value="validateToken"/>
 			<item value="jwt"/>

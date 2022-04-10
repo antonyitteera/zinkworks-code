@@ -14,7 +14,7 @@ export class LoginService {
 
   login(account:any,pin:any){
 
-    return this.http.post(`${environment.loginServiceBaseUrl}/User/login`,{
+    return this.http.post(`${environment.loginServiceBaseUrl}/user/login`,{
       "username":account,
       "password":pin
     })
