@@ -45,8 +45,6 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
-import { NgSelectModule } from '@ng-select/ng-select';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { LoginService } from './service/login.service';
@@ -88,8 +86,6 @@ const materialModules =  [
   MatPaginatorModule,
   MatSortModule,
   MatTableModule,
-  NgxMatSelectSearchModule,
-  NgSelectModule,
   ReactiveFormsModule
   ]
 
