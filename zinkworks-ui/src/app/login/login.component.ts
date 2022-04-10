@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { LoginService } from '../service/login.service';
 
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
   account='';
   pin='';
   constructor(public loginService : LoginService,
-    private router: Router) { }
+    private router: Router, private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
   }
@@ -25,7 +26,7 @@ export class LoginComponent implements OnInit {
       this.router.navigateByUrl("/atm");
     },err=>{
       console.log(err);
-      
+      this._snackBar.open("Login Unsuccessful please try again with correct username or password");
     })
   }
 

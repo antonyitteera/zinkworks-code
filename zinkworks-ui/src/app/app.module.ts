@@ -112,7 +112,8 @@ const materialModules =  [
   ],
   providers: [
     LoginService,
-    AtmService
+    AtmService,
+    {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 5000}}
   ],
   bootstrap: [AppComponent]
 })

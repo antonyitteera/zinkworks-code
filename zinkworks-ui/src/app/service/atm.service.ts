@@ -16,4 +16,10 @@ export class AtmService {
     headers = headers.append('Authorization', 'Bearer ' + this.loginService.token); 
     return this.http.get(`${environment.atmServiceBaseUrl}/api/v1/retrievebalance`,{headers});
   }
+
+  withdraw(amountToDedeuct:any){
+    let headers: HttpHeaders = new HttpHeaders();
+    headers = headers.append('Authorization', 'Bearer ' + this.loginService.token); 
+    return this.http.get(`${environment.atmServiceBaseUrl}/api/v1/withdraw/${amountToDedeuct}`,{headers});
+  }
 }

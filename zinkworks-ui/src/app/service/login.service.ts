@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
   providedIn: 'root'
@@ -8,8 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class LoginService {
 
 
-  token:any='';
-
+  token:any = '';
   constructor(private http: HttpClient) { }
 
   login(account:any,pin:any){
